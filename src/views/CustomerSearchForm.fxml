@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sarFormContext" prefHeight="406.0" prefWidth="568.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerSearchFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="31.0" prefWidth="568.0" style="-fx-background-color: #9c88ff;" text="Customer search form">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="16.0" layoutY="76.0" prefHeight="31.0" prefWidth="536.0" promptText="Customer Id" />
+      <TextField fx:id="txtCustomerName" layoutX="16.0" layoutY="137.0" prefHeight="31.0" prefWidth="536.0" promptText="Customer Name" />
+      <TextField fx:id="txtCustomerAddress" layoutX="16.0" layoutY="188.0" prefHeight="31.0" prefWidth="536.0" promptText="Customer Address" />
+      <TextField fx:id="txtCustomerSalary" layoutX="16.0" layoutY="246.0" prefHeight="31.0" prefWidth="536.0" promptText="Customer Salary" />
+      <JFXButton buttonType="RAISED" layoutX="415.0" layoutY="309.0" onAction="#openDashBoardForm" prefHeight="43.0" prefWidth="126.0" style="-fx-background-color: #e1b12c;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="309.0" onAction="#btnSearchOnAction" prefHeight="43.0" prefWidth="126.0" style="-fx-background-color: #ffbe76;" text="Search Customer" />
+   </children>
+</AnchorPane>

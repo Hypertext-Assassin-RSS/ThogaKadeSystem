@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="saveFormContext" prefHeight="410.0" prefWidth="497.0" style="-fx-background-radius: 23;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerSaveFormController">
+   <children>
+      <Separator layoutX="70.0" layoutY="61.0" prefHeight="3.0" prefWidth="461.0" />
+      <TextField fx:id="txtId" layoutX="75.0" layoutY="81.0" prefHeight="31.0" prefWidth="451.0" promptText="customer ID" />
+      <TextField fx:id="txtName" layoutX="75.0" layoutY="138.0" prefHeight="31.0" prefWidth="451.0" promptText="Customer Name" />
+      <TextField fx:id="txtAddress" layoutX="75.0" layoutY="188.0" prefHeight="31.0" prefWidth="451.0" promptText="Customer Address" />
+      <TextField fx:id="txtSalary" layoutX="75.0" layoutY="242.0" prefHeight="31.0" prefWidth="451.0" promptText="Costomer salary" />
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: gold;" text="Save Customer Form" textFill="#171717">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="372.0" layoutY="324.0" onAction="#saveCustomerOnAction" prefHeight="41.0" prefWidth="154.0" style="-fx-background-color: red;" text="Save Customer" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="324.0" onAction="#openDashBoardForm" prefHeight="41.0" prefWidth="154.0" style="-fx-background-color: orange;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

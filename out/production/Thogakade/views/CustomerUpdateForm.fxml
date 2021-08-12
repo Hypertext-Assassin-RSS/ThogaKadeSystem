@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cusUpdateForm" prefHeight="406.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerUpdateFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="31.0" prefWidth="568.0" style="-fx-background-color: orange;" text="Customer Update form">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="14.0" layoutY="72.0" onAction="#selectCustomerOnAction" prefHeight="31.0" prefWidth="536.0" promptText="customer id" />
+      <TextField fx:id="txtName" layoutX="14.0" layoutY="120.0" prefHeight="31.0" prefWidth="536.0" promptText="customer name" />
+      <TextField fx:id="txtAddress" layoutX="14.0" layoutY="169.0" prefHeight="31.0" prefWidth="536.0" promptText="customer address" />
+      <TextField fx:id="txtSalary" layoutX="14.0" layoutY="226.0" prefHeight="31.0" prefWidth="536.0" promptText="customer salary" />
+      <JFXButton layoutX="14.0" layoutY="320.0" onAction="#openDashBoardForm" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="440.0" layoutY="320.0" onAction="#updateCustomerOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: purple;" text="Update Customer" textFill="WHITE" />
+   </children>
+</AnchorPane>

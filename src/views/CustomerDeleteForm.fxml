@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cusDelForContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerDeleteFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="43.0" prefWidth="600.0" style="-fx-background-color: #636e72;" text="Customer Delete Form">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="18.0" layoutY="88.0" onAction="#searchCustomerOnAction" prefHeight="31.0" prefWidth="564.0" promptText="customer id" />
+      <TextField fx:id="txtName" layoutX="18.0" layoutY="146.0" prefHeight="31.0" prefWidth="564.0" promptText="customer name" />
+      <TextField fx:id="txtAddress" layoutX="18.0" layoutY="204.0" prefHeight="31.0" prefWidth="564.0" promptText="customer address" />
+      <TextField fx:id="txtSalary" layoutX="18.0" layoutY="262.0" prefHeight="31.0" prefWidth="564.0" promptText="customer salary" />
+      <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="323.0" onAction="#openDashBoardForm" prefHeight="43.0" prefWidth="160.0" style="-fx-background-color: #ffeaa7;" text="Back" />
+      <JFXButton buttonType="RAISED" layoutX="422.0" layoutY="323.0" onAction="#customerDeleteOnAction" prefHeight="43.0" prefWidth="160.0" style="-fx-background-color: #fab1a0;" text="Delete customer" />
+   </children>
+</AnchorPane>
